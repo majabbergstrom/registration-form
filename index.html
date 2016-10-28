@@ -11,48 +11,56 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 </head>
 <body>
-  <form class="island">
-    <h1 class="push-0 not-bold yotta">Want to go to Mars?</h1>
-    <hr>
-    <h2 class="not-bold mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</h2>
-    <p class="italic mega">Personal details</p>
-    <div>
-      <label for="name" name="name">Name</label>
-      <input id="name">
-    </div>
-    <div>
-      <label for="age" name="age">Age</label>
-      <input id="age">
-    </div>
-    <div>
-      <label for="email">Your email</label>
-      <input id="email" type="email" placeholder="youremail@example.com">
-    </div>
-    <div>
-      <label hidden="subject" for="subject">Request to join the mission</label>
-    </div>
-    <div>
-      <label for="physical-fitness">Physical fitness</label>
-      <select id="physical-fitness">
-        <option>Super-human</option>
-        <option>Fit as a fiddle</option>
-        <option>Not terribly strong</option>
-        <option>A little couch-potato-y</option>
-      </select>
-    </div>
-    <div>
-      <label for="address">Address</label>
-      <textarea id="address"></textarea>
-    </div>
-    <p class="italic mega">Mission Statement</p>
-    <div>
-      <label for="statement">Why do you want to go to Mars?</label>
-      <textarea id="statement"></textarea>
-    </div>
-    <div>
-      <button type="register">Register for the trip!</button>
-    </div>
-  </form>
-
+  <section>
+    <form class="gutter-1-2 valign-middle text-center push-0" method="POST" action="https://formspree.io/berg0280@algonquinlive.com">
+      <h1 class="gutter-1-4 text-left pad-t-2 not-bold exa">Want to go to Mars?</h1>
+      <p class="not-bold text-left gutter-1-4 mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <fieldset>
+        <legend class="italic gutter-1-2 push text-left giga">Personal details</legend>
+        <div class="grid gutter-1-4">
+          <div class="unit xs-1 s-1 m-1 l-1-2 push text-left">
+            <label class="milli" for="name">Name</label>
+            <input id="name" name="name">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 push text-left">
+            <label class="milli" for="age">Age</label>
+            <input id="age" name="age">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 push text-left">
+            <label class="milli" for="email">Email</label>
+            <input id="email" type="email" placeholder="youremail@example.com" name="email">
+          </div>
+          <div>
+            <input id="subject" value="Request to join the mission" type="hidden">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 push text-left">
+            <label class="milli" for="physical-fitness">Physical fitness</label>
+            <select id="physical-fitness" name="_physical-fitness">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 text-left">
+            <label class="milli" for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="italic giga gutter-1-2 push-1-2 text-left">Mission statement</legend>
+        <div class="grid gutter-1-4">
+          <div class="unit xs-1 s-1 m-1 l-1 push text-left">
+            <label class="milli" for="statement">Why do you want to go to Mars?</label>
+            <textarea id="statement" name="statement"></textarea>
+          </div>
+          <div class="push">
+            <button class="btn text-center" type="submit">Register for the trip!</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </section>
 </body>
 </html>
